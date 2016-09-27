@@ -77,7 +77,6 @@ class UrlGenerator():
     def date_html_gen(self):
         for date in self.start.dates_until(self.finish):
             link = date.to_link()
-            print(link)
             yield load(link)
 
     def get_article_links(self):
@@ -135,7 +134,6 @@ def main():
     args = parse_argument(sys.argv)
     log.config(log.level(args.log_level))
     url_list = (UrlGenerator(args.start, args.finish).get_article_links())
-    print(url_list)
     log.debug('STARTING...')
     with ThreadPoolExecutor(max_workers=args.thread_number) as executor:
         result = executor.map(load_url, url_list)

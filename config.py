@@ -4,6 +4,7 @@ import types
 ROOT_PATH = '.'
 HTML_PATH = ROOT_PATH + "/html/"
 ARTICLE_PATH = ROOT_PATH + "/article/"
+LABEL_PATH = ROOT_PATH + "/label/"
 
 if __name__ == "__main__":
     for name, value in globals().copy().items():

@@ -84,7 +84,7 @@ class ArticleParser(HTMLParser):
         if self._is_important:
             self._text.write('\n')
         if self._in_text_tag:
-            self._text.write(str(data).strip())
+            self._text.write(str(data).strip() + ' ')
         #title
         if self._in_h1_tag:
             self._text.write(data)

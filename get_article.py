@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from config import ROOT_PATH, HTML_PATH, ARTICLE_PATH
+from config import HTML_PATH, ARTICLE_PATH
 from parser import get_article
 from os import listdir
 from os.path import isfile

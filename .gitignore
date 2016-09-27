@@ -1,7 +1,0 @@
-# exclude so-called database, python system file and nohup output
-
-label
-article
-html
-__pycache__
-working_information.log
